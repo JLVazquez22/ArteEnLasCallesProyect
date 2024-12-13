@@ -4,8 +4,11 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        imbue: ['Imbue', 'sans-serif'],
-        playwrite: ['Playwrite DK', 'sans-serif'],
+        imbue: ['"Imbue"', 'serif'],
+        oswald: ['"Oswald"', 'sans-serif'],
+        ptsans: ['"PT Sans"', 'sans-serif'],
+        playwriteDK: ['"Playwrite DK Uloopet Guides"', 'cursive'],
+        playwriteUS: ['"Playwrite US Modern Guides"', 'cursive'],
       },
     },
   },

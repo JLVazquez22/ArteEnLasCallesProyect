@@ -11,15 +11,36 @@
     crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link href="https://fonts.googleapis.com/css2?family=Imbue:opsz,wght@10..100,100..900&family=PT+Sans:ital,wght@0,
     400;0,700;1,400;1,700&family=Playwrite+DK+Uloopet+Guides&family=Playwrite+US+Modern+Guides&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Imbue:opsz,wght@10..100,100..900&family=Oswald:wght@200..700&family=PT+
+    Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playwrite+DK+Uloopet+Guides&family=Playwrite+US+Modern+Guides&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- MAIN CONTAINER -->
-    <section class="bg_img flex items-center justify-center text-center text-white w-full">
-        <div class="">
-            <h1 class="text-6xl font-semibold m-6 font-mono">ArteEnLasCalles</h1>
-            <p class="text-lg mb-6">Descubre los murales más impresionantes y los puntos de interés cultural a través de un mapa interactivo.</p>
-            <a href="./pages/contenido.html" class="bg-gray-400 text-white py-2 px-4 rounded-lg text-xl hover:bg-gray-500 transition duration-300 mt-6">Adelante!</a>
-        </div>
+    <section class="bg_img flex justify-center text-center text-white w-full overflow-hidden">
+        <!-- MAIN BOX -->
+        <main class=" flex flex-col justify-between w-full " >
+            <!-- BOX IMG PRESENTATION -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+                <img src="./assets/images/img_index1.jpg" alt="" class="w-full h-40 object-cover  shadow-md hidden sm:block border-2 border-black filter grayscale-[60%]">
+                <img src="./assets/images/img_index2.jpg" alt="" class="w-full h-40 object-cover  shadow-md hidden sm:block border-2 border-black filter grayscale-[60%]">
+                <img src="./assets/images/img_index3.jpg" alt="" class="w-full h-40 object-cover  shadow-md hidden lg:block border-2 border-black filter grayscale-[60%]">
+                <img src="./assets/images/img_index4.jpg" alt="" class="w-full h-40 object-cover  shadow-md hidden lg:block border-2 border-black filter grayscale-[60%]">
+            </div>
+             <!-- BOX TITLE AND LINK -->
+            <div class="p-2 mx-5">
+                <h1 class="text-5xl lg:text-6xl font-semibold m-6 font-oswald text-black">ArteEnLasCalles</h1>
+                <p class="text-sm lg:text-lg mb-10 text-black">Descubre los murales más impresionantes y los puntos de interés cultural a través de un mapa interactivo.</p>
+                <a href="./pages/contenido.html" class="bg-black text-white py-2 px-4 rounded-lg text-xl hover:bg-gray-900 transition duration-300 mt-6 mb-6">Adelante!</a>
+            </div>
+            <!-- BOX IMG PRESENTATION -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+                <img src="./assets/images/img_index5.jpg" alt="" class="w-full h-40 object-cover  shadow-md hidden sm:block border-2 border-black filter grayscale-[60%]">
+                <img src="./assets/images/img_index6.jpg" alt="" class="w-full h-40 object-cover  shadow-md hidden sm:block border-2 border-black filter grayscale-[60%]">
+                <img src="./assets/images/img_index7.jpg" alt="" class="w-full h-40 object-cover  shadow-md hidden lg:block border-2 border-black filter grayscale-[60%]">
+                <img src="./assets/images/img_index8.jpg" alt="" class="w-full h-40 object-cover  shadow-md hidden lg:block border-2 border-black filter grayscale-[60%]">
+            </div>
+        </main>
+       
     </section>
 
     
