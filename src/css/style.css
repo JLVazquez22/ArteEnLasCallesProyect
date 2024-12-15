@@ -2,10 +2,20 @@ body{
     margin: 0;
 }
 .bg_img{
-    background-image: url();
     background: radial-gradient(circle, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0)), url("../assets/images/img_index1.jpg");
     filter: grayscale(60%);
     background-size: 100% 100%;  
     background-position: center;
     height: 100vh;
+}
+.bg_header{
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0)), url("../assets/images/fondo__index.jpg");
+    filter: grayscale(60%);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.nav_contenido{
+    box-shadow: 0px 0px 5px -1px rgba(0,0,0,0.75);
 }
