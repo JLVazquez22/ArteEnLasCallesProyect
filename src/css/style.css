@@ -3,7 +3,8 @@ body{
 }
 .bg_img{
     background-image: url();
-    background: radial-gradient(circle, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0)), url("../assets/images/bg_gray.jpg");
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0)), url("../assets/images/img_index1.jpg");
+    filter: grayscale(60%);
     background-size: 100% 100%;  
     background-position: center;
     height: 100vh;
