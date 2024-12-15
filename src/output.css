@@ -685,12 +685,20 @@ video {
   height: 150px;
 }
 
+.h-auto {
+  height: auto;
+}
+
 .w-full {
   width: 100%;
 }
 
 .flex-col {
   flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .items-center {
@@ -880,6 +888,10 @@ video {
 
 .duration-300 {
   transition-duration: 300ms;
+}
+
+.\[out\:json\] {
+  out: json;
 }
 
 .hover\:bg-gray-900:hover {

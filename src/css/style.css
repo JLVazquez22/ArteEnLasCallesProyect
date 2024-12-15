@@ -19,3 +19,16 @@ body{
 .nav_contenido{
     box-shadow: 0px 0px 5px -1px rgba(0,0,0,0.75);
 }
+
+/* CLASES DE JS */
+.box__img{
+    width: 400px;
+    height: auto;
+}
+
+.img{
+    width: 100%;
+    height: auto;
+    margin: 5px;
+    border-radius: 2px;
+}
