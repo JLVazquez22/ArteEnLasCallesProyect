@@ -20,7 +20,7 @@
     <!-- HEADER WITH IMG -->
     <header class="bg_header h-[150px] sm:h-[300px] flex flex-col items-center justify-center">
         <h1 class="text-2xl sm:text-4xl font-bold text-white">Bienvenido a ArteEnLasCalles</h1>
-        <h2 class="text-lg sm:text-2xl font-bold text-white mt-3">Mapa de Murales y Arte Urbano</h2>
+        <h2 class="text-lg sm:text-2xl font-bold text-white mt-3">Banco de Imagenes y Galerias de Arte</h2>
     </header>
 
     <!-- NAV -->
@@ -33,7 +33,7 @@
             <!-- LINKS -->
             <ul class="flex space-x-3 sm:space-x-6">
                 <li><a href="#img" class="hover:text-gray-200 text-sm sm:text-base">Imagenes</a></li>
-                <li><a href="#puntos" class="hover:text-gray-200 text-sm sm:text-base">Puntos de Interés</a></li>
+                <li><a href="#ubication" class="hover:text-gray-200 text-sm sm:text-base">Galerias</a></li>
                 <li><a href="#" class="hover:text-gray-200 text-sm sm:text-base">Contacto</a></li>
             </ul>
         </div>
@@ -41,19 +41,21 @@
 
     <!-- MAIN CONTAINER -->
     <main class="container mx-auto mt-6">
+        <!-- IMG -->
         <section id="img">
-            <h2 class="text-2xl font-bold mb-4">Imagenes</h2>
-            <!-- IMG -->
-             <!-- APLICAR GRID !!!!! -->
-            <div id="imgContainer" class="bg-gray-300 border-2 border-black flex flex-wrap">
-                
+            <h2 class="text-2xl font-bold mb-4">Banco de imagenes </h2>
+            <!-- MAIN BOX IMG -->
+            <div id="imgContainer" class="bg-gray-300 border-2 border-black grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4 w-full justify-items-center items-center">
+                <!-- AQUI SE GENERAN LAS IMAGENES -->
             </div>
+            
         </section>
 
-        <!-- <section id="puntos" class="mt-12">
-            <h2 class="text-2xl font-bold mb-4">Puntos de Interés</h2>
+        <!-- DIRECTIONS -->
+        <section id="ubication" class="mt-12">
+            <h2 class="text-2xl font-bold mb-4">Galerias</h2>
             <p>Puntos destacados del arte urbano.</p>
-        </section> -->
+        </section>
     </main>
 
     <!-- FOOTER -->
