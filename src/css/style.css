@@ -1,6 +1,13 @@
 body{
     margin: 0;
 }
+.bg_gray{
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0)), url("../assets/images/bg_gray.jpg");
+    filter: grayscale(60%);
+    background-size: 100%;  
+
+  
+}
 .bg_img{
     background: radial-gradient(circle, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0)), url("../assets/images/img_index1.jpg");
     filter: grayscale(60%);
@@ -22,16 +29,23 @@ body{
 
 /* CLASES DE JS */
 .box__img{
-    width: 400px;
     height: auto;
     display: flex;
     margin-bottom: 80px;
     display: flex;
     flex-direction: column;
+    background-color: white;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 
 .img{
     width: 100%;
     height: auto;
-    border-radius: 5px;
+    
+}
+
+.h3__box__img{
+    font-weight: bold;
+    padding: 5px 0 0 5px;
 }

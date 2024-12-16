@@ -13,17 +13,18 @@ const obtenerImagenes = () => {
         
         arrayImagenes.forEach(imagen => {
             const imagenes = imagen.urls.regular;
+            const autor = imagen.user.first_name;            
             const localizacion = imagen.user.location || "Ubicación no disponible"; 
 
             // CREAR IMAGENES Y LOCALIZACIÓN
-            crearElementos(imagenes, localizacion);
+            crearElementos(imagenes, autor, localizacion);
         });
     })
 };
 
 
 // CREAR IMAGENES E INFORMACIÓN EN EL DOM
-const crearElementos = (imagenes, localizacion) => {
+const crearElementos = (imagenes, autor, localizacion) => {
     let fragment = document.createDocumentFragment();
 
     let divImg = document.createElement("div");
@@ -34,6 +35,12 @@ const crearElementos = (imagenes, localizacion) => {
     divImg.appendChild(img);
     fragment.appendChild(divImg);
     imgContainer.appendChild(fragment);
+
+    // MOSTRAR NOMBRE AUTOR
+    const nombreAutor = document.createElement("h3");
+    nombreAutor.textContent = autor;
+    nombreAutor.classList.add("h3__box__img");
+    divImg.appendChild(nombreAutor);
 
      // MOSTRAR UBICACION
      const ubicacionTexto = document.createElement("p");
