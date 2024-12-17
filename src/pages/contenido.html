@@ -24,17 +24,18 @@
     </header>
 
     <!-- NAV -->
-    <nav class="nav_contenido bg-gray-400 text-white h-[60px] flex sticky top-0">
+    <nav class="nav_contenido bg-gray-400 text-white h-[60px] flex sticky top-0 m-0">
         <div class="container mx-auto flex justify-center sm:justify-between items-center py-4 px-6">
             <!-- TITLE (visible solo en pantallas grandes) -->
             <div class="hidden sm:block text-xl font-semibold">
-                <a href="#" class="font-oswald text-2xl hover:text-gray-200">ArteEnLasCalles</a>
+                <a href="#" class="font-oswald text-3xl hover:text-gray-200">ArteEnLasCalles</a>
             </div>
             <!-- LINKS -->
             <ul class="flex space-x-3 sm:space-x-6">
-                <li><a href="#img" class="hover:text-gray-200 text-sm sm:text-base">Imagenes</a></li>
-                <li><a href="#ubication" class="hover:text-gray-200 text-sm sm:text-base">Galerias</a></li>
-                <li><a href="#" class="hover:text-gray-200 text-sm sm:text-base">Contacto</a></li>
+                <li><a href="#img" class="hover:text-gray-200 text-sm sm:text-lg">Imagenes</a></li>
+                <li><a href="#ubication" class="hover:text-gray-200 text-sm sm:text-lg">Galerias</a></li>
+                <li><a href="#ubication" class="hover:text-gray-200 text-sm sm:text-lg">Favoritos</a></li>
+                <li><a href="#" class="hover:text-gray-200 text-sm sm:text-lg">Contacto</a></li>
             </ul>
         </div>
     </nav>
@@ -42,19 +43,63 @@
     <!-- MAIN CONTAINER -->
     <main class="container mx-auto mt-6 ">
         <!-- IMG -->
-        <section id="img">
-            <h2 class="text-2xl font-bold mb-4">Banco de imagenes </h2>
+        <section id="img" class="mt-20">
+            <h1 class="text-2xl font-bold mb-1 text-center">Banco de Imágenes </h1>
+            <h2 class="text-lg mb-6 text-center">Echa un ojo a las fotografías de arte más virales de la semana! </h2>
             <!-- MAIN BOX IMG -->
-            <div id="imgContainer" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4 w-full justify-items-center items-center">
-                <!-- AQUI SE GENERAN LAS IMAGENES -->
+            <div id="imgContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4 w-full justify-items-center items-center">
+                
             </div>
+        </section>
+
+        <!-- FORM -->
+        <section class="mt-20 bg-white p-4 rounded-sm m-4">
+            <!-- MAIN BOX -->
+            <div class="flex flex-col md:flex-row items-start justify-between">
+                <!-- FORM BOX -->
+                <div class="w-full md:w-1/2 p-4 ">
+                    <h1 class="text-2xl font-bold mb-4">¿Te interesa mandarnos tu fotografía?</h1>
+                    <form action="#" method="POST" class="space-y-4">
+                        <!-- INPUT IMG -->
+                        <div>
+                            <label for="imagen" class="block font-medium text-gray-700">Sube tu imagen</label>
+                            <input type="file" id="imagen" name="imagen" class="mt-1 block w-full border rounded p-2 focus:outline-none focus:ring focus:border-gray-200" required>
+                        </div>
+                        <!-- INPUT NAME -->
+                        <div>
+                            <label for="nombre" class="block font-medium text-gray-700">Tu nombre</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" class="mt-1 block w-full border rounded p-2 focus:outline-none focus:ring focus:border-gray-200" required>
+                        </div>
+                        <!-- INPUT LOCATION -->
+                        <div>
+                            <label for="ubicacion" class="block font-medium text-gray-700">Ubicación</label>
+                            <input type="text" id="ubicacion" name="ubicacion" placeholder="Escribe tu ubicación" class="mt-1 block w-full border rounded p-2 focus:outline-none focus:ring focus:border-gray-200" required>
+                        </div>
+                        <!-- BUTTON SUBMIT -->
+                        <div>
+                            <button type="submit" class="bg-gray-300 text-black font-medium py-2 px-4 rounded hover:bg-gray-200 transition duration-300">
+                                Enviar fotografía
+                            </button>
+                        </div>
+                    </form>
+                    <!-- TEXT -->
+                    <p class="mt-4 text-gray-600 italic">
+                        "Tu contribución ayuda a que el arte urbano llegue a más personas. ¡Gracias por ser parte de esta comunidad!"
+                    </p>
+                </div>
+                <!-- IMG BOX -->
+                <div class="w-full md:w-1/2 p-4 md:flex justify-center hidden ">
+                    <img src="../assets/images/img_index3.jpg" class="rounded-sm shadow-md">
+                </div>
+            </div>
+
             
         </section>
 
         <!-- DIRECTIONS -->
         <section id="ubication" class="mt-12">
-            <h2 class="text-2xl font-bold mb-4">Galerias</h2>
-            <p>Puntos destacados del arte urbano.</p>
+            <h1 class="text-2xl font-bold mb-1 text-center">Ubicaciones de Galerias </h1>
+            <h2 class="text-lg mb-6 text-center">Te interesa el arte urbano de alguna ciudad? Informate aquí de las Galerías cercanas </h2>
         </section>
     </main>
 

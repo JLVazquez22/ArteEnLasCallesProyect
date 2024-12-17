@@ -31,7 +31,7 @@ body{
 .box__img{
     height: auto;
     display: flex;
-    margin-bottom: 80px;
+   
     display: flex;
     flex-direction: column;
     background-color: white;
