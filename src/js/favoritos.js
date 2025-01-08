@@ -12,9 +12,11 @@ document.addEventListener("DOMContentLoaded", () => {
         const favoritos = obtenerFavoritos();
 
         if (favoritos.length === 0) {
-            favoritosContainer.innerHTML = "<p>No tienes imágenes favoritas aún.</p>";
-            return;
-        }
+            const mensaje = document.createElement("p");
+            mensaje.textContent = "No tienes imágenes favoritas aún.";
+            favoritosContainer.innerHTML = "";
+            favoritosContainer.appendChild(mensaje);
+        } 
 
         favoritos.forEach((imagenUrl) => {
             // DIV

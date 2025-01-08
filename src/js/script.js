@@ -40,7 +40,6 @@ const crearElementos = (imagenes, autor, localizacion) => {
     // LIKE BUTTON
     let buttonLike = document.createElement("button");
     buttonLike.classList.add("button__like");
-    // buttonLike.dataset.imagen = imagenes; // ASOCIA LA URL A LA IMAGEN DEL BOTON
 
     // ICON LIKE FOR THE BUTTON
     let iconLike = document.createElement("i");
